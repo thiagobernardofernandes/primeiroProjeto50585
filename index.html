@@ -4,26 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Lista de Compras</title>
+    <title>Formulario</title>
   </head>
   <body>
-    <h1>Tabela</h1>
-    <table border>
-      <tr>
-        <th>Frutas</th>
-        <th>Verduras</th>
-        <th>Legumes</th>
-      </tr>
-      <tr>
-        <td>Maça</td>
-        <td>Alface</td>
-        <td>Amendoim</td>
-      </tr>
-      <tr>
-        <td>Laranja</td>
-        <td>Couve</td>
-        <td>Trigo</td>
-      </tr>
-    </table>
+    <form action="">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <label for="genero">Gênero:</label> <br />
+        <span>masculino</span>
+        <input type="radio" name="genero" value="masculino" />
+        <span>feminino</span>
+        <input type="radio" name="genero" value="feminino" />
+        <span>outro</span>
+        <input type="radio" name="genero" value="outro" />
+        <br />
+        <br />
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" /> <br />
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" />
+        <br />
+        <br />
+
+        <label for="tamanhos">Tamanho:</label>
+        <select name="tamanhos">
+          <option value="G">Grande</option>
+          <option value="M">Médio</option>
+          <option value="P">Pequeno</option>
+        </select>
+        <br />
+        <br />
+
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
   </body>
 </html>
